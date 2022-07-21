@@ -65,6 +65,17 @@ just that.
 In this exercise, we'll walk through executing a handful of common and handy SQL
 queries.
 
+<details>
+  <summary>
+    <em>Is a <code>DELETE</code> statement a query?</em>
+  </summary>
+
+  <h3>No!</h3>
+  <p>A query is a statement that retrieves data. Since delete statements do not
+     retrieve any data, they are just regular statements.</p>
+</details>
+<br/>
+
 ***
 
 ## Code Along: SQL Queries
@@ -181,7 +192,8 @@ table — for example, the employee with the highest paycheck or the patient
 with the most recent appointment — we can use `ORDER BY` in conjunction
 with `LIMIT`.
 
-`LIMIT` is used to determine the number of records you want to return from a dataset. For example:
+`LIMIT` is used to determine the number of records you want to return from a
+dataset. For example:
 
 ```sql
 SELECT * FROM cats ORDER BY age DESC LIMIT 1;
@@ -213,6 +225,18 @@ id          name        age         breed       owner_id
 4           Moe         10          Tabby
 3           Lil\' Bub   5           American S
 ```
+
+<details>
+  <summary>
+    <em>How could you retrieve the three youngest cats?</em>
+  </summary>
+
+  <h3><code>SELECT * FROM cats ORDER BY age ASC LIMIT 3</code</h3>
+  <p>Ordering query results in ascending order puts the lowest numbers and
+     earliest letters first. Limiting to the first three results will return
+     the three cats with the lowest ages.</p>
+</details>
+<br/>
 
 ### `BETWEEN`
 
