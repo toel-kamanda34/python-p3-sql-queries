@@ -231,7 +231,7 @@ id          name        age         breed       owner_id
     <em>How could you retrieve the three youngest cats?</em>
   </summary>
 
-  <h3><code>SELECT * FROM cats ORDER BY age ASC LIMIT 3</code</h3>
+  <h3><code>SELECT * FROM cats ORDER BY age ASC LIMIT 3</code></h3>
   <p>Ordering query results in ascending order puts the lowest numbers and
      earliest letters first. Limiting to the first three results will return
      the three cats with the lowest ages.</p>
